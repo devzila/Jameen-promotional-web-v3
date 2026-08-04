@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jameen — Everything Your Housing Society Needs</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <meta name="description" content="Jameen is a cloud platform for housing societies and maintenance companies in India — maintenance billing, resident app, visitor management, complaints, accounting and committee reporting, all in one place.">
 
 <!-- Open Graph -->
@@ -99,10 +100,11 @@
     display:flex; align-items:center; gap:8px;
   }
   .brand .mark{
-    width:20px; height:20px;
-    background: linear-gradient(135deg, var(--clay), var(--gold));
-    border-radius:3px;
-    display:inline-block;
+    width:28px; height:28px;
+    border-radius:4px;
+    display:block;
+    object-fit:cover;
+    flex-shrink:0;
   }
   nav.links{display:flex; gap:34px; align-items:center;}
   nav.links a{
@@ -115,12 +117,19 @@
     background:var(--clay); transform:scaleX(0); transform-origin:left; transition:transform .25s ease;
   }
   nav.links a:hover::after{transform:scaleX(1);}
-  .nav-cta{
-    background:var(--ink); color:var(--paper); padding:10px 20px; border-radius:2px;
-    font-size:13.5px; font-weight:600; border:1px solid var(--ink);
-    transition:background .2s ease, color .2s ease;
+  nav.links a.nav-cta{
+    background:var(--clay); color:#fff; padding:11px 22px; border-radius:2px;
+    font-size:13.5px; font-weight:600; border:1px solid var(--clay);
+    letter-spacing:.02em;
+    box-shadow:0 1px 0 rgba(27,24,17,.06), 0 6px 16px rgba(178,75,44,.22);
+    transition:background .2s ease, border-color .2s ease, transform .18s ease, box-shadow .2s ease;
   }
-  .nav-cta:hover{background:var(--clay); border-color:var(--clay);}
+  nav.links a.nav-cta::after{display:none;}
+  nav.links a.nav-cta:hover{
+    background:var(--clay-dim); border-color:var(--clay-dim); color:#fff;
+    transform:translateY(-1px);
+    box-shadow:0 2px 0 rgba(27,24,17,.06), 0 10px 22px rgba(178,75,44,.28);
+  }
   .nav-toggle{display:none; background:none; border:0; font-family:var(--mono); font-size:13px;}
 
   /* ---------- buttons ---------- */
@@ -380,7 +389,7 @@
 
 <header class="site">
   <div class="navbar">
-    <a class="brand" href="#top"><span class="mark"></span>Jameen</a>
+    <a class="brand" href="#top"><img class="mark" src="images/icon-192.png" alt="" width="28" height="28">Jameen</a>
     <nav class="links" id="navLinks">
       <a href="#features">Features</a>
       <a href="#accounting">Accounting</a>
