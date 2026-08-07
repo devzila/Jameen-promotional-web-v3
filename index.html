@@ -3,387 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jameen — Everything Your Housing Society Needs</title>
+<title>Jameen — India's AI-Powered Smart Community Operating System</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-<meta name="description" content="Jameen is a cloud platform for housing societies and maintenance companies in India — maintenance billing, resident app, visitor management, complaints, accounting and committee reporting, all in one place.">
+<meta name="description" content="Jameen is India's AI-powered Smart Community Operating System — maintenance billing, resident app, visitor management, accounting, an AI assistant, IoT-connected infrastructure and predictive analytics, all in one place.">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Jameen — Smart Society Management Platform">
-<meta property="og:description" content="Everything your housing society needs. One powerful platform.">
+<meta property="og:title" content="Jameen — India's AI-Powered Smart Community Operating System">
+<meta property="og:description" content="Everything your housing society needs, today. An AI + IoT intelligence layer, tomorrow.">
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-<style>
-  :root{
-    --ink:#1B1811;
-    --ink-soft:#25211A;
-    --ink-line: rgba(246,241,228,.14);
-    --paper:#F6F1E4;
-    --paper-soft:#EEE6D2;
-    --paper-line: rgba(27,24,17,.13);
-    --clay:#B24B2C;
-    --clay-dim: #8f3c23;
-    --moss:#49563A;
-    --gold:#C69433;
-    --stone:#7C7462;
-    --stone-dark:#5B5648;
-    --radius: 3px;
-    --serif: 'Fraunces', serif;
-    --sans: 'Inter', system-ui, sans-serif;
-    --mono: 'IBM Plex Mono', monospace;
-    --maxw: 1180px;
-  }
-
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important;}
-  }
-
-  body{
-    background:var(--paper);
-    color:var(--ink);
-    font-family:var(--sans);
-    font-size:16px;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-
-  img,svg{display:block; max-width:100%;}
-  a{color:inherit; text-decoration:none;}
-  ul{list-style:none;}
-  button{font:inherit; cursor:pointer;}
-
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
-
-  h1,h2,h3,h4{font-family:var(--serif); font-weight:500; letter-spacing:-0.01em; line-height:1.08;}
-
-  .eyebrow{
-    font-family:var(--mono);
-    font-size:12px;
-    letter-spacing:.12em;
-    text-transform:uppercase;
-    color:var(--clay);
-    display:flex;
-    align-items:center;
-    gap:10px;
-  }
-  .eyebrow::before{
-    content:"";
-    width:16px; height:1px; background:var(--clay);
-  }
-
-  :focus-visible{ outline: 2px solid var(--clay); outline-offset: 3px; }
-
-  /* ---------- reveal ---------- */
-  .reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
-  .reveal.in{opacity:1; transform:none;}
-
-  /* ---------- nav ---------- */
-  header.site{
-    position:sticky; top:0; z-index:100;
-    background:rgba(246,241,228,.86);
-    backdrop-filter: blur(10px);
-    border-bottom:1px solid var(--paper-line);
-  }
-  .navbar{
-    display:flex; align-items:center; justify-content:space-between;
-    padding:18px 28px; max-width:var(--maxw); margin:0 auto;
-  }
-  .brand{
-    font-family:var(--serif); font-weight:600; font-size:22px; letter-spacing:-0.01em;
-    display:flex; align-items:center; gap:8px;
-  }
-  .brand .mark{
-    width:28px; height:28px;
-    border-radius:4px;
-    display:block;
-    object-fit:cover;
-    flex-shrink:0;
-  }
-  nav.links{display:flex; gap:34px; align-items:center;}
-  nav.links a{
-    font-size:14px; color:var(--stone-dark); font-weight:500;
-    position:relative; padding:4px 0;
-  }
-  nav.links a:hover{color:var(--ink);}
-  nav.links a::after{
-    content:""; position:absolute; left:0; right:0; bottom:0; height:1px;
-    background:var(--clay); transform:scaleX(0); transform-origin:left; transition:transform .25s ease;
-  }
-  nav.links a:hover::after{transform:scaleX(1);}
-  nav.links a.nav-cta{
-    background:var(--clay); color:#fff; padding:11px 22px; border-radius:2px;
-    font-size:13.5px; font-weight:600; border:1px solid var(--clay);
-    letter-spacing:.02em;
-    box-shadow:0 1px 0 rgba(27,24,17,.06), 0 6px 16px rgba(178,75,44,.22);
-    transition:background .2s ease, border-color .2s ease, transform .18s ease, box-shadow .2s ease;
-  }
-  nav.links a.nav-cta::after{display:none;}
-  nav.links a.nav-cta:hover{
-    background:var(--clay-dim); border-color:var(--clay-dim); color:#fff;
-    transform:translateY(-1px);
-    box-shadow:0 2px 0 rgba(27,24,17,.06), 0 10px 22px rgba(178,75,44,.28);
-  }
-  .nav-toggle{display:none; background:none; border:0; font-family:var(--mono); font-size:13px;}
-
-  /* ---------- buttons ---------- */
-  .btn{
-    display:inline-flex; align-items:center; gap:10px;
-    padding:14px 26px; font-weight:600; font-size:14.5px; border-radius:2px;
-    border:1px solid transparent; transition:transform .18s ease, background .2s ease, border-color .2s ease;
-  }
-  .btn-primary{background:var(--clay); color:#fff;}
-  .btn-primary:hover{background:var(--clay-dim); transform:translateY(-1px);}
-  .btn-ghost{border-color:var(--paper-line); color:var(--ink);}
-  .btn-ghost:hover{border-color:var(--ink);}
-  .btn-ghost .play{
-    width:20px;height:20px;border-radius:50%; background:var(--ink); color:var(--paper);
-    display:inline-flex; align-items:center; justify-content:center; font-size:9px;
-  }
-
-  /* ---------- hero ---------- */
-  .hero{
-    position:relative;
-    padding:88px 0 60px;
-    background: var(--paper);
-    overflow:hidden;
-  }
-  .hero .wrap{
-    display:grid; grid-template-columns: 1.05fr .95fr; gap:56px; align-items:center;
-  }
-  .hero h1{
-    font-size:clamp(38px, 4.6vw, 60px);
-    margin:20px 0 22px;
-  }
-  .hero h1 em{
-    font-style:normal; color:var(--clay);
-  }
-  .hero p.lede{
-    font-size:17px; color:var(--stone-dark); max-width:480px; margin-bottom:26px;
-  }
-  .chip-row{display:flex; flex-wrap:wrap; gap:9px; margin-bottom:34px;}
-  .chip{
-    font-family:var(--mono); font-size:11.5px; letter-spacing:.02em;
-    padding:6px 11px; border:1px solid var(--paper-line); border-radius:20px;
-    color:var(--stone-dark); background:var(--paper-soft);
-  }
-  .hero-ctas{display:flex; gap:16px; flex-wrap:wrap;}
-
-  /* --- hero illustration: site plan / isometric plot --- */
-  .plot{
-    position:relative; aspect-ratio:1/1; width:100%;
-    display:flex; align-items:center; justify-content:center;
-  }
-  .plot svg{ width:100%; height:100%; overflow:visible; }
-  .plot-tag{
-    position:absolute; top:6%; left:2%;
-    font-family:var(--mono); font-size:10.5px; letter-spacing:.06em;
-    color:var(--stone); border:1px dashed var(--paper-line); padding:5px 9px; border-radius:2px;
-    background:rgba(246,241,228,.7);
-  }
-  .float-card{
-    position:absolute;
-    background:var(--paper); border:1px solid var(--paper-line);
-    border-radius:3px; padding:10px 13px;
-    box-shadow: 0 14px 30px -12px rgba(27,24,17,.25);
-    font-family:var(--mono); font-size:11.5px; color:var(--stone-dark);
-    display:flex; flex-direction:column; gap:2px;
-    animation: drift 7s ease-in-out infinite;
-  }
-  .float-card b{font-family:var(--sans); font-size:15px; color:var(--ink); font-weight:700;}
-  .float-card.a{ top:2%; right:0%; animation-delay:0s;}
-  .float-card.b{ bottom:16%; left:-6%; animation-delay:1.4s;}
-  .float-card.c{ bottom:0%; right:6%; animation-delay:2.6s;}
-  @keyframes drift{
-    0%,100%{ transform:translateY(0);}
-    50%{ transform:translateY(-7px);}
-  }
-  .float-card .up{color:var(--moss); font-family:var(--sans); font-weight:600;}
-
-  /* ---------- section shells ---------- */
-  section{ padding:100px 0; }
-  .section-head{ max-width:640px; margin-bottom:56px; }
-  .section-head h2{ font-size:clamp(28px,3.4vw,40px); margin-top:16px;}
-  .section-head p{ color:var(--stone-dark); margin-top:14px; font-size:16px; max-width:520px;}
-  .band-dark{ background:var(--ink); color:var(--paper); }
-  .band-dark .eyebrow{ color:var(--gold); }
-  .band-dark .eyebrow::before{ background:var(--gold); }
-  .band-dark .section-head p{ color:rgba(246,241,228,.7); }
-  .band-soft{ background:var(--paper-soft); }
-
-  /* ---------- flow diagram ---------- */
-  .flow{
-    display:flex; align-items:center; justify-content:space-between;
-    flex-wrap:wrap; gap:0; position:relative;
-  }
-  .flow-node{
-    display:flex; flex-direction:column; align-items:center; gap:12px;
-    text-align:center; width:150px; position:relative;
-  }
-  .flow-node .dot{
-    width:56px; height:56px; border-radius:50%;
-    background:var(--ink-soft); border:1px solid var(--ink-line);
-    display:flex; align-items:center; justify-content:center;
-    font-family:var(--serif); font-size:20px; color:var(--gold);
-  }
-  .flow-node span{font-size:13.5px; color:rgba(246,241,228,.85); font-weight:500;}
-  .flow-arrow{
-    flex:1; min-width:24px; height:1px; background:repeating-linear-gradient(90deg, rgba(246,241,228,.35) 0 6px, transparent 6px 12px);
-    position:relative; align-self:center; margin-top:-30px;
-  }
-  .flow-arrow::after{
-    content:"→"; position:absolute; right:-4px; top:-9px; color:rgba(246,241,228,.55); font-size:14px;
-  }
-  @media(max-width:860px){
-    .flow{flex-direction:column; align-items:flex-start; gap:26px;}
-    .flow-node{flex-direction:row; width:auto; text-align:left;}
-    .flow-arrow{display:none;}
-  }
-
-  /* ---------- feature parcels ---------- */
-  .parcels{
-    display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
-    background:var(--paper-line); border:1px solid var(--paper-line);
-  }
-  .parcel{
-    background:var(--paper); padding:38px 32px; position:relative;
-  }
-  .parcel::before, .parcel::after{
-    content:""; position:absolute; width:10px; height:10px; border:1px solid var(--stone);
-    opacity:.55;
-  }
-  .parcel::before{ top:10px; left:10px; border-right:0; border-bottom:0;}
-  .parcel::after{ bottom:10px; right:10px; border-left:0; border-top:0;}
-  .parcel .plot-no{
-    font-family:var(--mono); font-size:11px; color:var(--clay); letter-spacing:.06em; margin-bottom:18px;
-  }
-  .parcel h3{ font-size:21px; margin-bottom:10px; }
-  .parcel p{ color:var(--stone-dark); font-size:14.5px; margin-bottom:20px; }
-  .microflow{
-    display:flex; flex-wrap:wrap; gap:6px; font-family:var(--mono); font-size:11px; color:var(--stone-dark);
-  }
-  .microflow .step{
-    background:var(--paper-soft); border:1px solid var(--paper-line); padding:5px 9px; border-radius:2px;
-  }
-  .microflow .sep{ color:var(--stone); align-self:center; }
-  @media(max-width:900px){ .parcels{grid-template-columns:1fr;} }
-
-  /* ---------- gold banner (maintenance company) ---------- */
-  .banner{
-    background:var(--moss); color:var(--paper); border-radius:4px; padding:54px 48px;
-    display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center;
-  }
-  .banner .eyebrow{ color:#DDD3AE; }
-  .banner .eyebrow::before{ background:#DDD3AE; }
-  .banner h2{ font-size:clamp(26px,3vw,34px); color:#fff; margin:14px 0 16px; }
-  .banner p{ color:rgba(246,241,228,.82); font-size:15.5px; margin-bottom:26px; max-width:460px; }
-  .stack{ display:flex; flex-direction:column; gap:0; font-family:var(--mono); font-size:13px; }
-  .stack .row{
-    display:flex; align-items:center; justify-content:space-between;
-    padding:14px 0; border-bottom:1px dashed rgba(246,241,228,.25);
-  }
-  .stack .row:last-child{ border-bottom:0; }
-  .stack .row b{ font-family:var(--serif); font-size:19px; font-weight:600; color:var(--gold); }
-  @media(max-width:860px){ .banner{grid-template-columns:1fr; padding:38px 26px;} }
-
-  /* ---------- accounting spotlight ---------- */
-  .ledger{
-    display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--ink-line);
-    border:1px solid var(--ink-line); margin-top:10px;
-  }
-  .ledger .cell{
-    background:var(--ink-soft); padding:22px 20px;
-  }
-  .ledger .cell span{ display:block; font-family:var(--mono); font-size:11.5px; color:var(--gold); letter-spacing:.05em; margin-bottom:8px;}
-  .ledger .cell p{ font-size:14px; color:rgba(246,241,228,.82); }
-  @media(max-width:760px){ .ledger{grid-template-columns:repeat(2,1fr);} }
-
-  /* ---------- comparison ---------- */
-  .compare{ width:100%; border-collapse:collapse; font-size:14.5px; }
-  .compare th, .compare td{ text-align:left; padding:16px 18px; border-bottom:1px solid var(--paper-line); }
-  .compare thead th{
-    font-family:var(--mono); font-size:11.5px; letter-spacing:.05em; text-transform:uppercase; color:var(--stone);
-    border-bottom:1px solid var(--ink);
-  }
-  .compare td.yes{ color:var(--moss); font-weight:600; }
-  .compare td.no{ color:var(--clay); }
-  .compare tr:hover td{ background:var(--paper-soft); }
-  .compare th:not(:first-child), .compare td:not(:first-child){ text-align:center; }
-
-  /* ---------- trust ---------- */
-  .trust-grid{
-    display:grid; grid-template-columns:repeat(3,1fr); gap:28px;
-  }
-  .trust-item{ padding:26px 0; border-top:1px solid var(--paper-line); }
-  .trust-item .num{ font-family:var(--mono); font-size:12px; color:var(--clay); margin-bottom:10px; }
-  .trust-item h4{ font-size:17px; margin-bottom:8px; }
-  .trust-item p{ font-size:13.5px; color:var(--stone-dark); }
-  @media(max-width:760px){ .trust-grid{grid-template-columns:1fr;} }
-
-  /* ---------- pilot ---------- */
-  .pilot{
-    border:1px solid var(--paper-line); border-radius:4px; padding:44px; text-align:center;
-    background: repeating-linear-gradient(135deg, var(--paper) 0 22px, var(--paper-soft) 22px 23px);
-  }
-  .pilot h3{ font-size:24px; margin-bottom:12px; }
-  .pilot p{ color:var(--stone-dark); max-width:480px; margin:0 auto 22px; font-size:15px; }
-
-  /* ---------- demo form ---------- */
-  .demo-wrap{ display:grid; grid-template-columns:.85fr 1.15fr; gap:56px; }
-  .demo-copy h2{ font-size:clamp(26px,3.2vw,36px); margin:16px 0 16px; }
-  .demo-copy p{ color:var(--stone-dark); margin-bottom:26px; max-width:420px; }
-  .demo-list{ display:flex; flex-direction:column; gap:14px; font-size:14.5px; }
-  .demo-list li{ display:flex; gap:10px; align-items:baseline; }
-  .demo-list li::before{ content:"—"; color:var(--clay); font-family:var(--mono); }
-
-  form.demo{
-    background:var(--paper); border:1px solid var(--paper-line); border-radius:4px; padding:36px;
-  }
-  .form-grid{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
-  .field{ display:flex; flex-direction:column; gap:7px; margin-bottom:18px; }
-  .field.full{ grid-column:1/-1; }
-  .field label{ font-family:var(--mono); font-size:11.5px; letter-spacing:.04em; color:var(--stone-dark); text-transform:uppercase; }
-  .field input, .field select{
-    border:1px solid var(--paper-line); background:var(--paper-soft); padding:12px 14px; font-family:var(--sans);
-    font-size:14.5px; border-radius:2px; color:var(--ink);
-  }
-  .field input:focus, .field select:focus{ border-color:var(--clay); outline:none; background:var(--paper); }
-  form.demo .btn{ width:100%; justify-content:center; margin-top:6px; }
-  .form-note{ font-size:12px; color:var(--stone); margin-top:14px; text-align:center; }
-  @media(max-width:900px){ .demo-wrap{grid-template-columns:1fr;} .form-grid{grid-template-columns:1fr;} }
-
-  /* ---------- footer ---------- */
-  footer{ background:var(--ink); color:rgba(246,241,228,.72); padding:70px 0 30px; }
-  .foot-grid{ display:grid; grid-template-columns:1.4fr repeat(4,1fr); gap:40px; margin-bottom:60px; }
-  .foot-grid h5{ font-family:var(--mono); font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin-bottom:18px; }
-  .foot-grid ul{ display:flex; flex-direction:column; gap:11px; font-size:14px; }
-  .foot-grid ul a:hover{ color:#fff; }
-  .foot-brand p{ font-size:14px; margin:14px 0 0; max-width:260px; color:rgba(246,241,228,.55); }
-  .foot-bottom{
-    display:flex; justify-content:space-between; align-items:center; padding-top:26px;
-    border-top:1px solid rgba(246,241,228,.14); font-size:12.5px; color:rgba(246,241,228,.45); flex-wrap:wrap; gap:12px;
-  }
-  @media(max-width:860px){ .foot-grid{grid-template-columns:1fr 1fr;} }
-
-  /* ---------- responsive nav ---------- */
-  @media(max-width:900px){
-    nav.links{
-      position:fixed; inset:64px 0 0 0; background:var(--paper); flex-direction:column;
-      padding:40px 28px; gap:26px; transform:translateY(-110%); transition:transform .3s ease; z-index:90;
-    }
-    nav.links.open{ transform:translateY(0); }
-    .nav-toggle{ display:block; }
-    .hero .wrap{ grid-template-columns:1fr; }
-    .hero .plot{ order:-1; max-width:420px; margin:0 auto; }
-    .parcels, .demo-wrap{ grid-template-columns:1fr; }
-  }
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -392,7 +24,7 @@
     <a class="brand" href="#top"><img class="mark" src="images/icon-192.png" alt="" width="28" height="28">Jameen</a>
     <nav class="links" id="navLinks">
       <a href="#features">Features</a>
-      <a href="#accounting">Accounting</a>
+      <a href="ai-intelligence.html" class="nav-ai">AI Intelligence</a>
       <a href="#companies">For Companies</a>
       <a href="#trust">Security</a>
       <a href="#demo">Pricing</a>
@@ -408,22 +40,22 @@
   <section class="hero">
     <div class="wrap">
       <div>
-        <div class="eyebrow reveal">JAMEEN · SOCIETY MANAGEMENT PLATFORM</div>
+        <div class="eyebrow reveal">JAMEEN · AI-POWERED SMART COMMUNITY OPERATING SYSTEM</div>
         <h1 class="reveal">Everything your housing society needs, run from <em>one plot.</em></h1>
-        <p class="lede reveal">Maintenance billing, resident app, visitor management, complaints and accounting — the tools your committee, staff and residents already need, without the spreadsheets and WhatsApp groups holding it together.</p>
+        <p class="lede reveal">Maintenance billing, resident app, visitor management, complaints and accounting — live today. An AI assistant, predictive analytics and IoT-connected infrastructure — the intelligence layer we're building on top.</p>
         <div class="chip-row reveal">
           <span class="chip">Maintenance Billing</span>
           <span class="chip">Resident App</span>
           <span class="chip">Visitor Management</span>
-          <span class="chip">Complaint Tracking</span>
           <span class="chip">Accounting</span>
-          <span class="chip">Security Gate</span>
-          <span class="chip">Committee Dashboard</span>
+          <span class="chip chip-new">✦ AI Assistant</span>
+          <span class="chip chip-new">✦ Predictive Analytics</span>
         </div>
         <div class="hero-ctas reveal">
           <a href="#demo" class="btn btn-primary">Book a live demo</a>
           <a href="#flow" class="btn btn-ghost"><span class="play">▶</span> See how it works</a>
         </div>
+        <a href="#ai-os" class="link-arrow hero-subcta reveal">New — see the AI intelligence layer ↓</a>
       </div>
 
       <div class="plot reveal" aria-hidden="true">
@@ -439,16 +71,11 @@
           </defs>
           <rect x="10" y="10" width="400" height="400" fill="url(#grid)"/>
           <rect x="10" y="10" width="400" height="400" fill="none" stroke="#1B1811" stroke-opacity="0.18" stroke-width="1" stroke-dasharray="3 5"/>
-          <!-- corner ticks -->
           <path d="M10 30 V10 H30" fill="none" stroke="#1B1811" stroke-width="1.4"/>
           <path d="M390 10 H410 V30" fill="none" stroke="#1B1811" stroke-width="1.4"/>
           <path d="M410 390 V410 H390" fill="none" stroke="#1B1811" stroke-width="1.4"/>
           <path d="M30 410 H10 V390" fill="none" stroke="#1B1811" stroke-width="1.4"/>
-
-          <!-- pathway -->
           <path d="M60 340 Q210 300 360 200" fill="none" stroke="#B24B2C" stroke-opacity=".55" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round"/>
-
-          <!-- building block 1 (tallest) -->
           <g>
             <polygon points="130,120 200,90 200,290 130,320" fill="#B24B2C"/>
             <polygon points="200,90 260,120 260,320 200,290" fill="#8f3c23"/>
@@ -462,15 +89,11 @@
               <rect x="212" y="220" width="12" height="14"/><rect x="238" y="215" width="12" height="14"/>
             </g>
           </g>
-
-          <!-- building block 2 (mid) -->
           <g>
             <polygon points="240,220 295,195 295,330 240,355" fill="#49563A"/>
             <polygon points="295,195 340,220 340,355 295,330" fill="#38431f"/>
             <polygon points="240,220 295,195 340,220 295,245" fill="#8AA05F"/>
           </g>
-
-          <!-- gate marker -->
           <g>
             <rect x="70" y="330" width="26" height="20" fill="#1B1811"/>
             <circle cx="83" cy="326" r="4" fill="#C69433"/>
@@ -508,14 +131,13 @@
   <section id="features">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow">FEATURES</div>
+        <div class="eyebrow">FEATURES · LIVE TODAY</div>
         <h2>Six parcels. One survey map.</h2>
         <p>Every part of running a society, laid out and connected — instead of six different apps and a diary.</p>
       </div>
     </div>
     <div class="wrap">
       <div class="parcels reveal">
-
         <div class="parcel">
           <div class="plot-no">PARCEL 01 · BILLING</div>
           <h3>Maintenance Billing</h3>
@@ -528,7 +150,6 @@
             <span class="step">Books updated</span>
           </div>
         </div>
-
         <div class="parcel">
           <div class="plot-no">PARCEL 02 · COMPLAINTS</div>
           <h3>Complaint Management</h3>
@@ -541,7 +162,6 @@
             <span class="step">Resolved</span>
           </div>
         </div>
-
         <div class="parcel">
           <div class="plot-no">PARCEL 03 · SECURITY</div>
           <h3>Visitor Management</h3>
@@ -553,7 +173,6 @@
             <span class="step">Exit logged</span>
           </div>
         </div>
-
         <div class="parcel">
           <div class="plot-no">PARCEL 04 · MOBILE</div>
           <h3>Resident App</h3>
@@ -563,7 +182,6 @@
             <span class="step">Parking</span><span class="step">SOS</span><span class="step">Events</span>
           </div>
         </div>
-
         <div class="parcel">
           <div class="plot-no">PARCEL 05 · GOVERNANCE</div>
           <h3>Committee Dashboard</h3>
@@ -573,7 +191,6 @@
             <span class="step">Occupancy</span><span class="step">Staff</span>
           </div>
         </div>
-
         <div class="parcel">
           <div class="plot-no">PARCEL 06 · TRACKING</div>
           <h3>Asset &amp; Staff Management</h3>
@@ -582,7 +199,46 @@
             <span class="step">Asset log</span><span class="step">Service due</span><span class="step">Staff shift</span><span class="step">Attendance</span>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ============ NEW: AI OPERATING SYSTEM ============ -->
+  <section class="band-ink" id="ai-os">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">BEYOND SOCIETY MANAGEMENT</div>
+        <h2>Today's software records data. Jameen understands it.</h2>
+        <p>Every module you just saw doesn't just store information — it feeds a single AI intelligence layer that turns records into decisions.</p>
+      </div>
+
+      <div class="ai-diagram reveal">
+        <div class="ai-inputs">
+          <div class="in-pill">Residents</div>
+          <div class="in-pill">Payments</div>
+          <div class="in-pill">Complaints</div>
+          <div class="in-pill">Assets</div>
+          <div class="in-pill">Visitors</div>
+          <div class="in-pill">Staff</div>
+          <div class="in-pill">Accounting</div>
+        </div>
+        <div class="ai-down-row">
+          <span>↓</span><span>↓</span><span>↓</span><span>↓</span><span>↓</span><span>↓</span><span>↓</span>
+        </div>
+        <div class="ai-layer-band">AI INTELLIGENCE LAYER</div>
+        <div class="ai-outputs">
+          <div class="out-card"><div class="glyph">📈</div><span>Predictive Analytics</span></div>
+          <div class="out-card"><div class="glyph">⚙️</div><span>Workflow Automation</span></div>
+          <div class="out-card"><div class="glyph">💬</div><span>Natural Language Assistant</span></div>
+          <div class="out-card"><div class="glyph">🔌</div><span>IoT Integration</span></div>
+          <div class="out-card"><div class="glyph">📄</div><span>Smart Reports</span></div>
+          <div class="out-card"><div class="glyph">🧭</div><span>Decision Support</span></div>
+        </div>
+        <p class="ai-tagline">Every action enriches the intelligence of your community.</p>
+      </div>
+
+      <div class="section-foot-link reveal">
+        <a href="ai-intelligence.html" class="btn btn-gold">Explore the AI Intelligence Layer →</a>
       </div>
     </div>
   </section>
@@ -621,6 +277,16 @@
         <div class="cell"><span>BOOKS</span><p>Income, expense, ledger and balance sheet, always current.</p></div>
         <div class="cell"><span>CONTROL</span><p>Full audit trail and bank reconciliation, exportable on demand.</p></div>
       </div>
+      <div class="future-ready reveal">
+        <div class="fr-label">FUTURE READY</div>
+        <div class="chip-row">
+          <span class="chip">AI Budget Planning</span>
+          <span class="chip">Expense Forecast</span>
+          <span class="chip">Vendor Intelligence</span>
+          <span class="chip">Predictive Cash Flow</span>
+          <span class="chip">Anomaly Detection</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -646,6 +312,54 @@
     </div>
   </section>
 
+  <!-- ============ NEW: AI ASSISTANT + PREDICTIVE PREVIEW ============ -->
+  <section class="band-ink" id="ai-assistant">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">AI SOCIETY ASSISTANT</div>
+        <h2>Ask questions. Get decisions.</h2>
+        <p>One assistant, for every role in the community — trained on your society's own data.</p>
+      </div>
+
+      <div class="chat-grid reveal">
+        <div class="chat-card">
+          <div class="role">COMMITTEE MEMBER</div>
+          <div class="q">Which residents haven't paid for over 90 days?</div>
+          <div class="a-label"><span class="badge">AI</span><span>RESPONSE</span></div>
+          <div class="a">12 flats. Total outstanding ₹5.2 lakh. Collection probability this month: 78%.</div>
+        </div>
+        <div class="chat-card">
+          <div class="role">RESIDENT</div>
+          <div class="q">Why is my maintenance bill higher this month?</div>
+          <div class="a-label"><span class="badge">AI</span><span>RESPONSE</span></div>
+          <div class="a">₹200 late payment penalty was added. Water charges rose with consumption. GST unchanged.</div>
+        </div>
+        <div class="chat-card">
+          <div class="role">MANAGER</div>
+          <div class="q">Show complaints likely to miss SLA.</div>
+          <div class="a-label"><span class="badge">AI</span><span>RESPONSE</span></div>
+          <div class="a">4 plumbing complaints, 2 lift complaints. One vendor requires escalation.</div>
+        </div>
+      </div>
+
+      <div class="section-head reveal" style="margin-top:70px; margin-bottom:30px;">
+        <div class="eyebrow">PREDICTIVE ANALYTICS</div>
+        <h2 style="font-size:clamp(24px,2.8vw,32px);">Jameen doesn't just report what happened. It predicts what happens next.</h2>
+      </div>
+      <div class="predict-grid reveal">
+        <div class="predict-card"><div class="glyph">📈</div><div class="val">96%</div><div class="sub">↑ 8%</div><div class="lbl">COLLECTION EFFICIENCY</div></div>
+        <div class="predict-card"><div class="glyph">₹</div><div class="val">₹18.2L</div><div class="sub">&nbsp;</div><div class="lbl">EXPECTED MONTH-END COLLECTION</div></div>
+        <div class="predict-card"><div class="glyph">💧</div><div class="val">↑ Trend</div><div class="sub">&nbsp;</div><div class="lbl">WATER LEAKAGE COMPLAINTS</div></div>
+        <div class="predict-card"><div class="glyph">⛽</div><div class="val">10 Days</div><div class="sub">Remaining</div><div class="lbl">GENERATOR FUEL</div></div>
+        <div class="predict-card"><div class="glyph">⬍</div><div class="val">+23%</div><div class="sub">&nbsp;</div><div class="lbl">LIFT MAINTENANCE COST</div></div>
+      </div>
+
+      <div class="section-foot-link reveal">
+        <a href="ai-intelligence.html#assistant" class="btn btn-gold">See the full AI Assistant &amp; Financial Intelligence →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ TRUST ============ -->
   <section id="trust">
     <div class="wrap">
@@ -661,6 +375,34 @@
         <div class="trust-item"><div class="num">04</div><h4>Audit logs</h4><p>Every change is recorded — who did what, and when.</p></div>
         <div class="trust-item"><div class="num">05</div><h4>SSL everywhere</h4><p>Every page and every API call, encrypted by default.</p></div>
         <div class="trust-item"><div class="num">06</div><h4>99.9% uptime</h4><p>Built to be there on the first of the month, when the invoices go out.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEW: CONNECTED COMMUNITY (compact) ============ -->
+  <section class="band-dark" id="connected">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">SMART MAINTENANCE · IOT</div>
+        <h2>Software that also sees the building, not just the books.</h2>
+        <p>Water tanks, lifts, generators and gates — connected to the same platform that manages your billing.</p>
+      </div>
+      <div class="connected-strip reveal">
+        <div class="iot-chip"><div class="glyph">📶</div><span>Smart Meter</span></div>
+        <div class="iot-chip"><div class="glyph">💧</div><span>Water Meter</span></div>
+        <div class="iot-chip"><div class="glyph">⚡</div><span>Generator</span></div>
+        <div class="iot-chip"><div class="glyph">⬍</div><span>Lift</span></div>
+        <div class="iot-chip"><div class="glyph">☀️</div><span>Solar</span></div>
+        <div class="iot-chip"><div class="glyph">🎥</div><span>CCTV</span></div>
+        <div class="iot-chip"><div class="glyph">🔒</div><span>Access Control</span></div>
+        <div class="iot-chip"><div class="glyph">🅿️</div><span>Parking</span></div>
+        <div class="iot-chip"><div class="glyph">🚗</div><span>ANPR</span></div>
+        <div class="iot-chip"><div class="glyph">▦</div><span>QR Gate</span></div>
+        <div class="iot-chip"><div class="glyph">🌬️</div><span>Air Quality</span></div>
+        <div class="iot-chip"><div class="glyph">🔥</div><span>Fire Alarm</span></div>
+      </div>
+      <div class="section-foot-link reveal">
+        <a href="ai-intelligence.html#iot" class="link-arrow">See the sensor → ticket → resolution flow →</a>
       </div>
     </div>
   </section>
@@ -738,8 +480,8 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a class="brand" href="#top" style="color:#fff;"><span class="mark"></span>Jameen</a>
-        <p>A cloud platform for housing societies and the companies that manage them. Built in India.</p>
+        <a class="brand" href="#top" style="color:#fff;"><img class="mark" src="images/icon-192.png" alt="" width="28" height="28">Jameen</a>
+        <p>India's AI-powered Smart Community Operating System — built for housing societies and the companies that manage them.</p>
       </div>
       <div>
         <h5>Product</h5>
@@ -751,20 +493,21 @@
         </ul>
       </div>
       <div>
+        <h5>AI Intelligence</h5>
+        <ul>
+          <li><a href="ai-intelligence.html">AI Society Assistant</a></li>
+          <li><a href="ai-intelligence.html#financial">Financial Intelligence</a></li>
+          <li><a href="ai-intelligence.html#iot">Smart Maintenance</a></li>
+          <li><a href="ai-intelligence.html#roadmap">Roadmap</a></li>
+        </ul>
+      </div>
+      <div>
         <h5>Company</h5>
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Careers</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#demo">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>Resources</h5>
-        <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#demo">Pricing</a></li>
-          <li><a href="#">Customer stories</a></li>
         </ul>
       </div>
       <div>
@@ -783,7 +526,6 @@
 </footer>
 
 <script>
-  // mobile nav
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
   navToggle.addEventListener('click', () => {
@@ -795,13 +537,11 @@
     navToggle.setAttribute('aria-expanded', false);
   }));
 
-  // scroll reveal
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // demo form (front-end only — wire to your backend endpoint)
   const form = document.getElementById('demoForm');
   const note = document.getElementById('formNote');
   form.addEventListener('submit', (e) => {
