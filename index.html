@@ -297,6 +297,7 @@
         <div class="eyebrow">THE ALTERNATIVE</div>
         <h2>What most societies are running today.</h2>
       </div>
+      <div class="compare-wrap">
       <table class="compare reveal">
         <thead>
           <tr><th>Capability</th><th>Excel</th><th>WhatsApp</th><th>Paper register</th><th>Jameen</th></tr>
@@ -309,6 +310,7 @@
           <tr><td>Works from a phone</td><td class="no">✕</td><td class="yes">✓</td><td class="no">✕</td><td class="yes">✓</td></tr>
         </tbody>
       </table>
+      </div>
     </div>
   </section>
 
@@ -528,14 +530,19 @@
 <script>
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
-  navToggle.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
+  function setNavOpen(open) {
+    navLinks.classList.toggle('open', open);
     navToggle.setAttribute('aria-expanded', open);
+    navToggle.textContent = open ? 'CLOSE' : 'MENU';
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  navToggle.addEventListener('click', () => {
+    setNavOpen(!navLinks.classList.contains('open'));
   });
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', false);
-  }));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setNavOpen(false)));
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900 && navLinks.classList.contains('open')) setNavOpen(false);
+  });
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
