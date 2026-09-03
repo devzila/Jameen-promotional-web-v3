@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — Jameen Smart Community Operating System</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta name="description" content="Simple, transparent pricing for Jameen — from free communities up to 20 units, to enterprise societies with 301+ flats. Monthly and annual plans.">
+
+<meta property="og:title" content="Jameen — Pricing">
+<meta property="og:description" content="Simple & transparent pricing for housing societies. Start free for up to 20 units.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="navbar">
+    <a class="brand" href="index.html"><img class="mark" src="images/icon-192.png" alt="" width="28" height="28">Jameen</a>
+    <nav class="links" id="navLinks">
+      <a href="index.html#features">Features</a>
+      <a href="ai-intelligence.html" class="nav-ai">AI Intelligence</a>
+      <a href="index.html#companies">For Companies</a>
+      <a href="index.html#trust">Security</a>
+      <a href="pricing.html">Pricing</a>
+      <a class="nav-cta" href="index.html#demo">Book a demo</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">MENU</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO + TOGGLE ============ -->
+  <section class="pricing-hero">
+    <div class="wrap">
+      <div class="eyebrow reveal">SIMPLE &amp; TRANSPARENT</div>
+      <h1 class="reveal">Pricing that fits your society — not the other way around.</h1>
+      <p class="lede reveal">Start free for small communities. Scale as you grow. No setup fees, no per-flat surprises.</p>
+      <div class="billing-toggle reveal" role="group" aria-label="Billing period">
+        <button type="button" class="active" data-period="monthly" aria-pressed="true">Monthly</button>
+        <button type="button" data-period="yearly" aria-pressed="false">
+          Annual <span class="save-pill">2 months free</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLANS ============ -->
+  <section style="padding-top:20px;" id="pricing">
+    <div class="wrap">
+      <div class="pricing-grid reveal">
+
+        <article class="price-card" data-plan="free">
+          <div class="plan-name">Free Community</div>
+          <div class="units">Up to 20 units</div>
+          <div class="amount"><span class="currency">₹</span><span class="price-value" data-monthly="0" data-yearly="0">0</span></div>
+          <div class="period price-period">/ month</div>
+          <div class="yearly-note" aria-hidden="true">&nbsp;</div>
+          <ul>
+            <li>Resident directory &amp; tracking</li>
+            <li>Maintenance dues calculation</li>
+            <li>Basic complaint logging</li>
+            <li>Committee dashboard</li>
+            <li>Email support</li>
+          </ul>
+          <a href="index.html#demo" class="btn btn-ghost">Get started</a>
+        </article>
+
+        <article class="price-card" data-plan="small">
+          <div class="plan-name">Small Community</div>
+          <div class="units">Up to 50 units</div>
+          <div class="amount"><span class="currency">₹</span><span class="price-value" data-monthly="99" data-yearly="999">99</span></div>
+          <div class="period price-period">/ month</div>
+          <div class="yearly-note" data-yearly-label="₹999 billed yearly">&nbsp;</div>
+          <ul>
+            <li>Everything in Free</li>
+            <li>Automatic invoicing</li>
+            <li>Payment tracking &amp; ledger</li>
+            <li>1-year financial history</li>
+            <li>Resident app access</li>
+            <li>Email support</li>
+          </ul>
+          <a href="index.html#demo" class="btn btn-ghost">Choose Small</a>
+        </article>
+
+        <article class="price-card featured" data-plan="growing">
+          <div class="badge">Most Popular</div>
+          <div class="plan-name">Growing Community</div>
+          <div class="units">Up to 100 units</div>
+          <div class="amount"><span class="currency">₹</span><span class="price-value" data-monthly="399" data-yearly="3999">399</span></div>
+          <div class="period price-period">/ month</div>
+          <div class="yearly-note" data-yearly-label="₹3,999 billed yearly">&nbsp;</div>
+          <ul>
+            <li>Everything in Small</li>
+            <li>Visitor management &amp; gate approvals</li>
+            <li>Complaint workflows</li>
+            <li>Full accounting suite</li>
+            <li>CSV data export</li>
+            <li>Priority email support</li>
+          </ul>
+          <a href="index.html#demo" class="btn btn-primary">Choose Growing</a>
+        </article>
+
+        <article class="price-card" data-plan="large">
+          <div class="plan-name">Large Community</div>
+          <div class="units">Up to 300 units</div>
+          <div class="amount"><span class="currency">₹</span><span class="price-value" data-monthly="749" data-yearly="7499">749</span></div>
+          <div class="period price-period">/ month</div>
+          <div class="yearly-note" data-yearly-label="₹7,499 billed yearly">&nbsp;</div>
+          <ul>
+            <li>Everything in Growing</li>
+            <li>Multi-tower / wing support</li>
+            <li>Expense management</li>
+            <li>Committee reports &amp; audit trail</li>
+            <li>CSV data export</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="index.html#demo" class="btn btn-ghost">Choose Large</a>
+        </article>
+
+        <article class="price-card" data-plan="enterprise">
+          <div class="plan-name">Enterprise Community</div>
+          <div class="units">301+ units</div>
+          <div class="amount"><span class="currency">₹</span><span class="price-value" data-monthly="1999" data-yearly="19999">1999</span></div>
+          <div class="period price-period">/ month</div>
+          <div class="yearly-note" data-yearly-label="₹19,999 billed yearly">&nbsp;</div>
+          <ul>
+            <li>Everything in Large</li>
+            <li>Dedicated account manager</li>
+            <li>Custom integrations</li>
+            <li>Maintenance company / portfolio mode</li>
+            <li>Onboarding &amp; migration support</li>
+            <li>SLA-backed support</li>
+          </ul>
+          <a href="index.html#demo" class="btn btn-ghost">Talk to us</a>
+        </article>
+
+      </div>
+
+      <div class="pricing-stats reveal">
+        <div class="stat"><b>₹0</b><span>Setup fees</span></div>
+        <div class="stat"><b>15 min</b><span>Typical setup</span></div>
+        <div class="stat"><b>100%</b><span>Data owned by you</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="band-soft">
+    <div class="wrap">
+      <div class="section-head centered reveal">
+        <div class="eyebrow" style="justify-content:center;">FAQ</div>
+        <h2>Questions committees usually ask.</h2>
+      </div>
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary>What happens if my subscription expires?</summary>
+          <div class="faq-body">Your data stays safe. The society is moved to Free Community limits (up to 20 units). You can view existing records; adding new ones resumes when you renew or upgrade.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Can I upgrade or downgrade anytime?</summary>
+          <div class="faq-body">Yes. Upgrades take effect immediately and are prorated. Downgrades apply at the end of your current billing cycle so you keep paid features through the period you've already paid for.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Is society data secure?</summary>
+          <div class="faq-body">Yes. Access is role-based for committee members and staff. Financial and resident data is encrypted in transit and at rest. Only authorised roles in your society can see sensitive records.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Can I export my data?</summary>
+          <div class="faq-body">CSV export is available on Growing, Large, and Enterprise plans. Free and Small plans let you view data on the dashboard; bulk export unlocks with Growing and above.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Can we migrate from Excel or another platform?</summary>
+          <div class="faq-body">Yes. We help import flats, residents, and opening balances. Larger societies and portfolios get hands-on migration support on Enterprise — and founding societies get setup help included.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Why choose annual billing?</summary>
+          <div class="faq-body">Annual plans include roughly two months free versus paying month to month, fewer renewals for the treasurer, and priority onboarding when slots are limited.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section>
+    <div class="wrap">
+      <div class="pricing-cta reveal">
+        <div class="eyebrow" style="justify-content:center;">READY WHEN YOU ARE</div>
+        <h2>See Jameen on a society like yours.</h2>
+        <p>Twenty minutes, on a call — with your flat count and current process. No slides, no commitment.</p>
+        <div class="cta-row">
+          <a href="index.html#demo" class="btn btn-primary">Book a free demo</a>
+          <a href="index.html#features" class="btn btn-ghost">Explore features</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html" style="color:#fff;"><img class="mark" src="images/icon-192.png" alt="" width="28" height="28">Jameen</a>
+        <p>India's AI-powered Smart Community Operating System — built for housing societies and the companies that manage them.</p>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <ul>
+          <li><a href="index.html#features">Maintenance Billing</a></li>
+          <li><a href="index.html#features">Visitor Management</a></li>
+          <li><a href="index.html#accounting">Accounting</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>AI Intelligence</h5>
+        <ul>
+          <li><a href="ai-intelligence.html">AI Society Assistant</a></li>
+          <li><a href="ai-intelligence.html#financial">Financial Intelligence</a></li>
+          <li><a href="ai-intelligence.html#iot">Smart Maintenance</a></li>
+          <li><a href="ai-intelligence.html#roadmap">Roadmap</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="index.html#demo">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Jameen. All rights reserved.</span>
+      <span>Made for Indian housing societies.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  function setNavOpen(open) {
+    navLinks.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open);
+    navToggle.textContent = open ? 'CLOSE' : 'MENU';
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  navToggle.addEventListener('click', () => {
+    setNavOpen(!navLinks.classList.contains('open'));
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setNavOpen(false)));
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900 && navLinks.classList.contains('open')) setNavOpen(false);
+  });
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  function formatPrice(n) {
+    return Number(n).toLocaleString('en-IN');
+  }
+
+  function setBilling(period) {
+    const yearly = period === 'yearly';
+    document.querySelectorAll('.billing-toggle button').forEach(btn => {
+      const on = btn.dataset.period === period;
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-pressed', on);
+    });
+    document.querySelectorAll('.price-value').forEach(el => {
+      el.textContent = formatPrice(el.dataset[yearly ? 'yearly' : 'monthly']);
+    });
+    document.querySelectorAll('.price-period').forEach(el => {
+      el.textContent = yearly ? '/ year' : '/ month';
+    });
+    document.querySelectorAll('.yearly-note').forEach(el => {
+      if (!el.dataset.yearlyLabel) return;
+      el.textContent = yearly ? el.dataset.yearlyLabel : '\u00a0';
+    });
+  }
+
+  document.querySelectorAll('.billing-toggle button').forEach(btn => {
+    btn.addEventListener('click', () => setBilling(btn.dataset.period));
+  });
+</script>
+
+</body>
+</html>
