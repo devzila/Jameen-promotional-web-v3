@@ -572,6 +572,133 @@ form.demo .btn{ width:100%; justify-content:center; margin-top:6px; }
   .feat-module{ scroll-margin-top:110px; padding:64px 0; }
 }
 
+/* ---------- trust & security page ---------- */
+.sec-hero{ padding:72px 0 64px; }
+.sec-hero-grid{ display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center; }
+.sec-hero h1{ font-size:clamp(34px,4.6vw,52px); margin:14px 0 18px; }
+.sec-hero .lede{ font-size:17.5px; color:var(--stone-dark); max-width:54ch; margin-bottom:28px; }
+.sec-hero-cta{ display:flex; gap:14px; flex-wrap:wrap; }
+
+.sec-visual{
+  background:var(--ink); color:var(--paper); border-radius:4px; padding:26px;
+  box-shadow:0 18px 40px -18px rgba(27,24,17,.45);
+}
+.sec-visual-head{
+  display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:20px;
+}
+.sec-visual-head .title{ font-family:var(--serif); font-weight:600; font-size:18px; }
+.sec-visual-head .badge{
+  font-family:var(--mono); font-size:10.5px; letter-spacing:.04em;
+  border:1px solid var(--ink-line); padding:6px 10px; border-radius:2px; color:var(--gold);
+}
+.sec-layers{ display:flex; flex-direction:column; gap:10px; }
+.sec-layer{
+  border:1px solid var(--ink-line); background:var(--ink-soft); border-radius:3px;
+  padding:14px 16px; display:flex; align-items:center; gap:14px;
+}
+.sec-layer .icon{
+  width:38px; height:38px; border-radius:3px; background:rgba(246,241,228,.08);
+  border:1px solid var(--ink-line); display:flex; align-items:center; justify-content:center;
+  font-family:var(--mono); font-size:11px; font-weight:700; color:var(--gold); flex-shrink:0;
+}
+.sec-layer strong{ display:block; font-size:13.5px; color:var(--paper); }
+.sec-layer span{ font-size:12px; color:rgba(246,241,228,.55); }
+
+.sec-pillars{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.sec-pillar{
+  background:#fff; border:1px solid var(--paper-line); border-radius:4px; padding:26px 22px;
+}
+.sec-pillar .icon{
+  width:42px; height:42px; border-radius:3px; background:var(--paper-soft);
+  border:1px solid var(--paper-line); color:var(--clay);
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--mono); font-weight:700; font-size:12px; margin-bottom:16px;
+}
+.sec-pillar h3{ font-size:17px; margin-bottom:8px; }
+.sec-pillar p{ font-size:13.5px; color:var(--stone-dark); margin:0; }
+
+.sec-protect{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.sec-protect-card{
+  border:1px solid var(--ink-line); border-radius:4px; padding:26px 22px; background:var(--ink-soft);
+}
+.sec-protect-card h3{ font-size:18px; color:var(--paper); margin-bottom:10px; }
+.sec-protect-card p{ font-size:14px; color:rgba(246,241,228,.68); margin:0 0 14px; }
+.sec-protect-card ul{ display:flex; flex-direction:column; gap:0; }
+.sec-protect-card li{
+  padding:10px 0; border-bottom:1px solid var(--ink-line);
+  font-size:13px; color:rgba(246,241,228,.82);
+}
+.sec-protect-card li:last-child{ border-bottom:0; }
+
+.sec-access{ display:grid; grid-template-columns:.9fr 1.1fr; gap:56px; align-items:center; }
+.sec-access-list{ display:flex; flex-direction:column; gap:12px; }
+.sec-access-item{
+  background:#fff; border:1px solid var(--paper-line); border-radius:3px; padding:18px 20px;
+}
+.sec-access-item strong{ display:block; font-size:15px; margin-bottom:4px; }
+.sec-access-item span{ font-size:13.5px; color:var(--stone-dark); }
+
+.sec-audit{
+  background:var(--paper-soft); border:1px solid var(--paper-line); border-radius:4px; padding:28px 24px;
+}
+.sec-audit-row{
+  display:grid; grid-template-columns:160px 1fr 140px; gap:16px; align-items:center;
+  padding:14px 0; border-bottom:1px solid var(--paper-line); font-size:13.5px;
+}
+.sec-audit-row:last-child{ border-bottom:0; }
+.sec-audit-row .action{ font-weight:600; }
+.sec-audit-row .user, .sec-audit-row .time{ color:var(--stone-dark); }
+.sec-audit-row .time{ text-align:right; font-family:var(--mono); font-size:12px; }
+
+.sec-reliab{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.sec-reliab-card{
+  background:#fff; border:1px solid var(--paper-line); border-radius:4px; padding:28px 22px;
+}
+.sec-reliab-card .big{
+  font-family:var(--serif); font-size:clamp(32px,3.5vw,42px); font-weight:600;
+  color:var(--clay); margin-bottom:8px; letter-spacing:-.02em;
+}
+.sec-reliab-card h3{ font-size:17px; margin-bottom:8px; }
+.sec-reliab-card p{ font-size:13.5px; color:var(--stone-dark); margin:0; }
+
+.sec-stack{
+  background:#fff; border:1px solid var(--paper-line); border-radius:4px; overflow:hidden;
+}
+.sec-stack-row{
+  display:grid; grid-template-columns:1fr 1.6fr; gap:24px;
+  padding:18px 22px; border-bottom:1px solid var(--paper-line);
+}
+.sec-stack-row:last-child{ border-bottom:0; }
+.sec-stack-row strong{ font-size:14.5px; }
+.sec-stack-row span{ font-size:13.5px; color:var(--stone-dark); }
+
+.sec-privacy{ text-align:center; max-width:720px; margin:0 auto; }
+.sec-privacy h2{ font-size:clamp(28px,3.4vw,42px); margin:14px 0 16px; }
+.sec-privacy p{ color:var(--stone-dark); font-size:16px; margin-bottom:14px; }
+
+.sec-cta{
+  text-align:center; padding:64px 40px;
+  border:1px solid var(--paper-line); border-radius:4px;
+  background: repeating-linear-gradient(135deg, var(--paper) 0 22px, var(--paper-soft) 22px 23px);
+}
+.sec-cta h2{ font-size:clamp(26px,3.2vw,38px); margin:14px 0 14px; }
+.sec-cta p{ color:var(--stone-dark); max-width:520px; margin:0 auto 26px; }
+.sec-cta .cta-row{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+
+@media(max-width:900px){
+  .sec-hero-grid, .sec-access{ grid-template-columns:1fr; gap:36px; }
+  .sec-pillars, .sec-reliab{ grid-template-columns:repeat(2,1fr); }
+  .sec-protect{ grid-template-columns:1fr; }
+}
+@media(max-width:600px){
+  .sec-hero{ padding:48px 0 40px; }
+  .sec-pillars, .sec-reliab{ grid-template-columns:1fr; }
+  .sec-audit-row{ grid-template-columns:1fr; gap:4px; }
+  .sec-audit-row .time{ text-align:left; }
+  .sec-stack-row{ grid-template-columns:1fr; gap:6px; }
+  .sec-cta{ padding:40px 22px; }
+}
+
 /* ---------- for companies page ---------- */
 .co-hero{ padding:72px 0 64px; }
 .co-hero-grid{ display:grid; grid-template-columns:1.1fr .9fr; gap:56px; align-items:center; }
