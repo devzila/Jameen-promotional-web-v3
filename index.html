@@ -436,12 +436,58 @@
 
   const form = document.getElementById('demoForm');
   const note = document.getElementById('formNote');
-  form.addEventListener('submit', (e) => {
+  const submitBtn = form.querySelector('button[type="submit"]');
+  const DEMO_API = 'https://api.jameen.com/v1/demo_requests';
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     if (!form.checkValidity()) { form.reportValidity(); return; }
-    note.textContent = "Thanks — we've received your request and will reply within one business day.";
-    note.style.color = "#49563A";
-    form.querySelectorAll('input, select, button').forEach(el => el.disabled = true);
+
+    const payload = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      society: form.society.value.trim(),
+      flats: Number(form.flats.value) || null,
+      phone: form.phone.value.trim(),
+      time: form.time.value.trim(),
+      current: form.current.value
+    };
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+    note.textContent = 'Submitting your request…';
+    note.style.color = '';
+
+    try {
+      const res = await fetch(DEMO_API, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      let data = null;
+      try { data = await res.json(); } catch (_) {}
+
+      if (!res.ok) {
+        const msg = (data && data.message) ? data.message : 'Something went wrong. Please try again.';
+        throw new Error(msg);
+      }
+
+      note.textContent = (data && data.message)
+        ? data.message
+        : "Thanks — we've received your request and will reply within one business day.";
+      note.style.color = '#49563A';
+      form.querySelectorAll('input, select, button').forEach(el => el.disabled = true);
+      submitBtn.textContent = 'Request sent';
+    } catch (err) {
+      note.textContent = err.message || 'Could not submit right now. Please try again.';
+      note.style.color = '#B24B2C';
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Request my demo';
+    }
   });
 </script>
 
