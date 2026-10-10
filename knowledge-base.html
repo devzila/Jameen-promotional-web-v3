@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knowledge Base — Jameen Guides for Committees &amp; Treasurers</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta name="description" content="Operating guides for Jameen: recurring maintenance bills, RWA accounting, GST on invoices, late fees, waivers and the audit trail.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="knowledge-base.html">
+<meta property="og:title" content="Knowledge Base — Jameen Guides for Committees & Treasurers">
+<meta property="og:description" content="Operating guides for Jameen: recurring maintenance bills, RWA accounting, GST on invoices, late fees, waivers and the audit trail.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="knowledge-base.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="navbar">
+    <a class="brand" href="index.html"><img class="mark" src="images/icon-192.png" alt="" width="28" height="28">Jameen</a>
+    <nav class="links" id="navLinks">
+      <a href="features.html">Features</a>
+      <a href="ai-intelligence.html" class="nav-ai">AI Intelligence</a>
+      <a href="for-companies.html">For Companies</a>
+      <a href="security.html">Trust &amp; Security</a>
+      <a href="knowledge-base.html">Guides</a>
+      <a href="pricing.html">Pricing</a>
+      <a class="nav-cta" href="index.html#demo">Book a demo</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">MENU</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="kb-hero">
+    <div class="wrap">
+      <div class="eyebrow">KNOWLEDGE BASE</div>
+      <h1>Guides for the committee and the treasurer.</h1>
+      <p class="lede">Plain-language manuals for how Jameen bills residents and keeps the society’s books — written for managing committees, treasurers and society accountants.</p>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="kb-grid">
+        <a class="kb-card" href="kb-recurring-invoices.html">
+          <span class="kb-tag">Billing</span>
+          <h2>How Jameen raises recurring maintenance bills</h2>
+          <p>When a bill is raised, which months are billing months, what period it covers, due dates, overdue rules and how late fees are added.</p>
+          <span class="kb-meta">For committee · treasurer · accountant</span>
+          <span class="link-arrow">Read the guide →</span>
+        </a>
+        <a class="kb-card" href="kb-rwa-accounting.html">
+          <span class="kb-tag">Accounting</span>
+          <h2>How Jameen keeps the society’s accounts</h2>
+          <p>Double-entry books for bills, GST, payments, waivers, overpayments, expenses, year close and the audit trail an auditor can follow.</p>
+          <span class="kb-meta">For committee · treasurer · accountant</span>
+          <span class="link-arrow">Read the guide →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html" style="color:#fff;"><img class="mark" src="images/icon-192.png" alt="" width="28" height="28">Jameen</a>
+        <p>India's AI-powered Smart Community Operating System — built for housing societies and the companies that manage them.</p>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <ul>
+          <li><a href="features.html#payments">Online Payments</a></li>
+          <li><a href="features.html#visitors">Visitor Management</a></li>
+          <li><a href="features.html#helpdesk">Helpdesk</a></li>
+          <li><a href="knowledge-base.html">Knowledge Base</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Guides</h5>
+        <ul>
+          <li><a href="kb-recurring-invoices.html">Recurring invoices</a></li>
+          <li><a href="kb-rwa-accounting.html">RWA accounting</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="index.html#demo">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Jameen. All rights reserved.</span>
+      <span>Made for Indian housing societies.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  function setNavOpen(open) {
+    navLinks.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open);
+    navToggle.textContent = open ? 'CLOSE' : 'MENU';
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  navToggle.addEventListener('click', () => {
+    setNavOpen(!navLinks.classList.contains('open'));
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setNavOpen(false)));
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900 && navLinks.classList.contains('open')) setNavOpen(false);
+  });
+</script>
+
+</body>
+</html>
