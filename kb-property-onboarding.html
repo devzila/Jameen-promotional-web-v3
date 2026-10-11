@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to onboard a property on Jameen — Jameen Knowledge Base</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta name="description" content="Setup guide for societies on Jameen: property fields, towers, unit types, flats, parking, security posts, common assets and allotments.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="kb-property-onboarding.html">
+<meta property="og:title" content="How to onboard a property on Jameen — Jameen Knowledge Base">
+<meta property="og:description" content="Setup guide for societies on Jameen: property fields, towers, unit types, flats, parking, security posts, common assets and allotments.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="kb-property-onboarding.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="navbar">
+    <a class="brand" href="index.html"><img class="mark" src="images/icon-192.png" alt="" width="28" height="28">Jameen</a>
+    <nav class="links" id="navLinks">
+      <a href="features.html">Features</a>
+      <a href="ai-intelligence.html" class="nav-ai">AI Intelligence</a>
+      <a href="for-companies.html">For Companies</a>
+      <a href="security.html">Trust &amp; Security</a>
+      <a href="knowledge-base.html">Guides</a>
+      <a href="pricing.html">Pricing</a>
+      <a class="nav-cta" href="index.html#demo">Book a demo</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">MENU</button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="kb-article-hero">
+    <div class="wrap">
+      <nav class="kb-crumbs" aria-label="Breadcrumb">
+        <a href="knowledge-base.html">Knowledge Base</a>
+        <span class="sep">/</span>
+        <span>Property onboarding</span>
+      </nav>
+      <div class="eyebrow">OPERATING GUIDE</div>
+      <h1>How to onboard a property on Jameen</h1>
+      <p class="lede">Every field on the property, and the records under it: towers, unit types, extra charges, flats, parking, security posts, common assets — and the order to set a site up.</p>
+    </div>
+  </section>
+  <section>
+    <div class="wrap kb-layout">
+      <aside class="kb-toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#the-order-to-set-a-site-up">The order to set a site up</a></li>
+          <li><a href="#the-property">The property</a></li>
+          <li><a href="#billing-fields-on-the-property">Billing fields on the property</a></li>
+          <li><a href="#bill-numbers-and-credit-note-numbers">Bill numbers and credit-note numbers</a></li>
+          <li><a href="#switching-a-property-off">Switching a property off</a></li>
+          <li><a href="#towers-and-blocks">Towers and blocks</a></li>
+          <li><a href="#unit-types">Unit types</a></li>
+          <li><a href="#flats">Flats</a></li>
+          <li><a href="#parking">Parking</a></li>
+          <li><a href="#security-posts">Security posts</a></li>
+          <li><a href="#common-assets">Common assets</a></li>
+          <li><a href="#a-short-example">A short example</a></li>
+          <li><a href="#what-the-office-should-remember">What the office should remember</a></li>
+        </ol>
+      </aside>
+      <article class="kb-content">
+<p>This guide is for the person setting up a society, a commercial complex, or a mixed site on Jameen. It explains every field on the property, and then the records that sit under it: towers, unit types, extra charges, flats, parking, security posts, and common assets.</p>
+<p>Create the property first. Towers, unit types, flats, parking, and posts all belong to that property. A flat cannot be created until its tower and its unit type exist.</p>
+<p>A property is one society or one site. The company above it can hold more than one property. Billing, bank details, towers, and flats are all per property. They are not shared with the next society on the same company.</p>
+<p>How a bill is raised from this setup is described in <a href="kb-recurring-invoices.html">How Jameen raises recurring maintenance bills</a>. How those bills sit in the books is described in <a href="kb-rwa-accounting.html">How Jameen keeps the society’s accounts</a>.</p>
+<p>Fields marked <strong>Required</strong> must be filled before the record can be saved. The others can be left blank and filled later. Counts of towers, unit types, flats, parking bays, and assets are kept by Jameen as you add those records. You do not type those counts yourself.</p>
+<hr>
+<h2 id="the-order-to-set-a-site-up">The order to set a site up</h2>
+<ol>
+<li>Create the property: name, address, and city, then the billing and bank details.</li>
+<li>Add each tower or block.</li>
+<li>Add each unit type, with its area and maintenance rate, and any extra charge that belongs to that type.</li>
+<li>Add each flat, pointing it at one tower and one unit type.</li>
+<li>Add parking bay numbers.</li>
+<li>Add the gate and any other security posts. Each tower already receives a post of its own.</li>
+<li>Add common assets if the helpdesk will track them.</li>
+<li>Allot flats to owners. A flat with no allotment is not on the scheduled maintenance run.</li>
+</ol>
+<hr>
+<h2 id="the-property">The property</h2>
+<h3 id="name-and-what-kind-of-site-it-is">Name and what kind of site it is</h3>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>Required</th><th>What to enter</th></tr>
+<tr><td>Name</td><td>Yes</td><td>The society’s name, as it should appear on bills and at the gate. “Suncity Parikrama”, “Horizon Residency”.</td></tr>
+<tr><td>Short name</td><td>No</td><td>A compact name where the full name does not fit.</td></tr>
+<tr><td>Use</td><td>No</td><td>Residential, commercial, or mixed. A new property starts as residential. This describes the site. It does not set the maintenance rate. The rate sits on the unit type.</td></tr>
+<tr><td>Managed by</td><td>No</td><td>Who runs the site day to day: the association, a builder, or a managing agency. Free text.</td></tr>
+<tr><td>Year built</td><td>No</td><td>The year the site was built. This is the site’s year, not the year of one flat.</td></tr>
+</table></div>
+<p>Jameen also builds a two-letter prefix from the name for maintenance request numbers. A two-word name uses the first letter of each of the first two words, so Suncity Parikrama becomes SP. A one-word name uses its first two letters, so Ansal becomes AN. Request numbers then run SP-1, SP-2, and so on. Renaming the property later does not change a prefix already set.</p>
+<h3 id="address-and-contact">Address and contact</h3>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>Required</th><th>What to enter</th></tr>
+<tr><td>Address</td><td>Yes</td><td>The first line of the site address. This is the address stored for the society.</td></tr>
+<tr><td>Address line 2</td><td>No</td><td>A second line: landmark, phase, or sector.</td></tr>
+<tr><td>City</td><td>Yes</td><td>The city.</td></tr>
+<tr><td>State</td><td>No</td><td>The state.</td></tr>
+<tr><td>PIN code</td><td>No</td><td>The postal code.</td></tr>
+<tr><td>Email</td><td>No</td><td>The office email. Stored in lower case.</td></tr>
+<tr><td>Phone</td><td>No</td><td>The office phone.</td></tr>
+<tr><td>Website</td><td>No</td><td>The society’s website.</td></tr>
+<tr><td>Notification email</td><td>No</td><td>A second email kept for notices. Stored in lower case.</td></tr>
+<tr><td>Notification phone</td><td>No</td><td>The phone a resident’s SOS alert offers as the gate number. If this is blank, the SOS alert uses the office phone instead.</td></tr>
+</table></div>
+<h3 id="bank-and-tax-numbers">Bank and tax numbers</h3>
+<p>These are the society’s own details. They are stored with the property so the office and the resident can see where to pay. Recording them does not open a bank feed, and it does not file a GST return.</p>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>Required</th><th>What to enter</th></tr>
+<tr><td>Bank name</td><td>No</td><td>The bank that holds the society’s account.</td></tr>
+<tr><td>Branch</td><td>No</td><td>The branch.</td></tr>
+<tr><td>Account number</td><td>No</td><td>The society’s account number.</td></tr>
+<tr><td>IFSC</td><td>No</td><td>The branch IFSC.</td></tr>
+<tr><td>UPI ID</td><td>No</td><td>The society’s UPI handle, if residents pay that way.</td></tr>
+<tr><td>PAN</td><td>No</td><td>The society’s PAN.</td></tr>
+<tr><td>GSTIN</td><td>No</td><td>The society’s GST registration number. This is the registration number. It does not set the GST percent on a maintenance bill.</td></tr>
+<tr><td>TAN</td><td>No</td><td>The society’s TAN, if it has one.</td></tr>
+</table></div>
+<p>Cheque, UPI, NEFT, RTGS, and IMPS receipts are posted to the one Bank Accounts ledger. Cash receipts are posted to Cash in Hand. The bank name and account number identify the society’s bank. They do not split the ledger into one book per account. That split is described in <a href="kb-accounting-reports.html">How to read the accounting reports</a>.</p>
+<h3 id="how-the-association-is-recorded">How the association is recorded</h3>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>Required</th><th>What to enter</th></tr>
+<tr><td>Association registration number</td><td>No</td><td>The number under which the association is registered.</td></tr>
+<tr><td>Association type</td><td>No</td><td>Free text, such as a co-operative housing society or an apartment owners association.</td></tr>
+<tr><td>Committee formed on</td><td>No</td><td>The date the present committee was formed.</td></tr>
+<tr><td>Next AGM</td><td>No</td><td>The date of the next annual general meeting.</td></tr>
+</table></div>
+<h3 id="size-and-pictures">Size and pictures</h3>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>Required</th><th>What to enter</th></tr>
+<tr><td>Total area</td><td>No</td><td>The area of the whole site, as a number.</td></tr>
+<tr><td>Area unit</td><td>No</td><td>The unit that number is in, such as square feet or square metres. Free text. It does not change the square feet stored on a unit type.</td></tr>
+<tr><td>Amenities</td><td>No</td><td>A number the office types for how many amenities the site has. Jameen does not count amenities from a list.</td></tr>
+<tr><td>Maintenance staff</td><td>No</td><td>A number the office types. It is not a live count of staff logins.</td></tr>
+<tr><td>Photo</td><td>No</td><td>The society picture. PNG or JPEG, up to 500 KB.</td></tr>
+<tr><td>Signature</td><td>No</td><td>The signature image used on the society’s documents. PNG or JPEG, up to 500 KB. Leaving the upload blank on a later save keeps the picture already stored.</td></tr>
+</table></div>
+<hr>
+<h2 id="billing-fields-on-the-property">Billing fields on the property</h2>
+<p>These fields decide the scheduled maintenance bill for every flat in the property. One flat cannot have a different generation day or a different late-fee rule. The full cycle, including which months are billing months and when a bill becomes overdue, is in the recurring-bills guide. The meaning of each field is here so it can be filled in at setup.</p>
+<p>A new property starts ready to bill: monthly, in arrears, billing month April, generation day the 1st, 14 days to pay, and no late-fee rule chosen.</p>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>What you are choosing</th><th>How a new property starts</th></tr>
+<tr><td>Billing frequency</td><td>How often a bill is raised, and how many months of maintenance one bill contains. Monthly, every two months, quarterly, half-yearly, or yearly.</td><td>Monthly</td></tr>
+<tr><td>Billing start month</td><td>The anchor month. April means a quarterly society is billed in April, July, October, and January. The start month does not change the dates printed on the bill.</td><td>April</td></tr>
+<tr><td>In arrears or in advance</td><td>In arrears, the bill covers the months just finished. In advance, it covers the months just starting.</td><td>In arrears</td></tr>
+<tr><td>Invoice generation day</td><td>The day of the month the bills are dated and raised. Use 1 to 31. A day of 29, 30, or 31 falls on the last day of a shorter month.</td><td>1</td></tr>
+<tr><td>Days to pay</td><td>The number of days after the bill date before the bill is due. The bill becomes overdue the day after the due date.</td><td>14</td></tr>
+<tr><td>Late-fee rule</td><td>None, a flat amount once, a percentage of the bill total once, or an amount each morning the bill stays open.</td><td>Not set, so no late fee is added</td></tr>
+<tr><td>Late-fee value</td><td>The rupee amount, the percent, or the rupee amount per day, matching the rule above.</td><td>Blank</td></tr>
+</table></div>
+<p>The maintenance GST rate stored for the society starts at 0%. The GSTIN does not change that rate. Extra charges on a unit type carry their own GST percent, which you set on the charge.</p>
+<p>Two figures on the property are stored and are not what the morning runs use.</p>
+<ul>
+<li><strong>Overdue charge amount</strong> is a stored amount. The late fee that is added comes from the late-fee rule and the late-fee value.</li>
+<li><strong>Automatic invoices</strong>, <strong>automatic reminders</strong>, and <strong>days before a reminder</strong> are saved on the property. The morning bill run does not read them. Bills are raised while the society is active, on the generation day, in a billing month. Outgoing email, below, is what allows the bill PDF to be sent.</li>
+</ul>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>What it does</th><th>How a new property starts</th></tr>
+<tr><td>Outgoing email</td><td>When this is on, raising a member bill emails the resident a PDF. When it is off, the email is not sent.</td><td>On</td></tr>
+</table></div>
+<p>Set the frequency, the start month, arrears or advance, and the generation day before the first billing day. A generation day that has already passed this month is not repeated tomorrow.</p>
+<hr>
+<h2 id="bill-numbers-and-credit-note-numbers">Bill numbers and credit-note numbers</h2>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>What to enter</th><th>How a new property starts</th></tr>
+<tr><td>Invoice number prefix</td><td>The text in front of each bill number.</td><td>Blank, so the number is just the sequence</td></tr>
+<tr><td>Last invoice number</td><td>The last number already used. The next bill takes the next number.</td><td>0, so the first bill is 1</td></tr>
+<tr><td>Credit-note prefix</td><td>The text in front of each credit-note number.</td><td>Blank</td></tr>
+<tr><td>Last credit-note number</td><td>The last credit-note number already used.</td><td>0, so the first credit note is 1</td></tr>
+</table></div>
+<p>The prefix can include a date token. The token is filled in on the day the document is numbered.</p>
+<div class="kb-table-wrap"><table>
+<tr><th>Token</th><th>Becomes</th><th>Example on 15 July 2026</th></tr>
+<tr><td><code>%YEAR%</code></td><td>The calendar year</td><td>2026</td></tr>
+<tr><td><code>%YEAR-MONTH%</code></td><td>Year and month</td><td>2026-07</td></tr>
+<tr><td><code>%FINANCIAL_YEAR%</code></td><td>The Indian financial year, 1 April to 31 March</td><td>2026-27</td></tr>
+</table></div>
+<p>A prefix of <code>INV-%FINANCIAL_YEAR%-</code> on 15 July 2026 produces a bill such as <code>INV-2026-27-1</code>. On 15 February 2027 the same prefix produces <code>INV-2026-27-</code>, because February is still that financial year. On 1 April 2027 it becomes <code>INV-2027-28-</code>.</p>
+<p>The last-number field is the last number issued, not the next one. If the society’s old books ended at 240, set the last invoice number to 240. The next Jameen bill is 241, with the prefix in front.</p>
+<hr>
+<h2 id="switching-a-property-off">Switching a property off</h2>
+<p>A new property is active. Scheduled bills are raised only while it stays active.</p>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>What it records</th></tr>
+<tr><td>Activated on</td><td>The date and time the property was switched on.</td></tr>
+<tr><td>Deactivation reason</td><td>Why the property was taken down.</td></tr>
+<tr><td>Removed on</td><td>The date and time it was taken off the active list.</td></tr>
+</table></div>
+<p>Taking the property off the active list stops the morning bill run for that society. It does not delete bills, receipts, or flats already stored.</p>
+<hr>
+<h2 id="towers-and-blocks">Towers and blocks</h2>
+<p>A tower is a building on the property. Flats belong to a tower. The gate list shows the tower name with the flat number.</p>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>Required</th><th>What to enter</th></tr>
+<tr><td>Name</td><td>Give every tower a name</td><td>The name residents and guards use: “Tower A”, “Block 3”, “Wing B”.</td></tr>
+<tr><td>Description</td><td>No</td><td>Anything the office wants beside the name: the phase, the entrance, the number of floors.</td></tr>
+</table></div>
+<p>Saving a tower creates a security post of the kind Tower, with the same name. Renaming the tower renames that post. You do not add the tower post by hand.</p>
+<p>A tower with no name is still saved. Its post is then named from its internal number, which is a poor name at the gate. Name the tower before you add flats.</p>
+<p>The same flat number may exist in two towers. Uniqueness is the number inside one tower, not across the society. Tower A flat 101 and Tower B flat 101 are two flats.</p>
+<hr>
+<h2 id="unit-types">Unit types</h2>
+<p>A unit type is a class of flat that shares an area and a maintenance rate. “2 BHK”, “3 BHK”, and “Shop” are unit types. Every flat of that type is billed from the type’s rate and area.</p>
+<p>The name must be unique on the property. Two types cannot both be called “2 BHK”.</p>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>Required</th><th>What to enter</th></tr>
+<tr><td>Name</td><td>Yes</td><td>The name residents will see on the rate, such as “2 BHK” or “Office”.</td></tr>
+<tr><td>Description</td><td>No</td><td>A note about the type.</td></tr>
+<tr><td>Use</td><td>Yes</td><td>Residential or commercial. A unit type does not have a mixed choice. A mixed property uses residential types and commercial types side by side.</td></tr>
+<tr><td>Area (square feet)</td><td>Yes</td><td>The area this type is billed on. Every flat of this type uses this area. A single flat cannot have its own area.</td></tr>
+<tr><td>Maintenance rate per square foot</td><td>Yes</td><td>The monthly rate. One month of maintenance is this rate times the area. A quarterly bill multiplies that month by three. The frequency on the property decides the multiplier.</td></tr>
+</table></div>
+<p>Example. Rate ₹4 per square foot, area 1,000. One month is ₹4,000. On a monthly frequency the maintenance line is ₹4,000. On a quarterly frequency it is ₹12,000. GST on that line uses the society’s maintenance GST rate, which starts at 0%.</p>
+<p>Changing the rate or the area changes the next scheduled bill. It does not rewrite a bill already raised.</p>
+<h3 id="extra-charges-on-a-unit-type">Extra charges on a unit type</h3>
+<p>An extra charge is a line added to every scheduled bill for flats of that type: parking, club, sinking fund, and similar heads. The name must be unique on that unit type.</p>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>Required</th><th>What to enter</th></tr>
+<tr><td>Name</td><td>Yes</td><td>The line name on the bill.</td></tr>
+<tr><td>Description</td><td>No</td><td>A note for the office.</td></tr>
+<tr><td>Kind</td><td>Yes</td><td>Fixed, or a percentage of maintenance.</td></tr>
+<tr><td>Monthly amount</td><td>Yes</td><td>For a fixed charge, the rupee amount per month. For a percentage charge, the percent of the maintenance amount, before GST.</td></tr>
+<tr><td>GST percent</td><td>Yes</td><td>The GST rate on this line only. It can be 0.</td></tr>
+</table></div>
+<p>A fixed charge of ₹500 a month is ₹500 on a monthly bill and ₹1,500 on a quarterly bill. A charge of 10% is 10% of the maintenance amount for that same number of months, before GST. GST is then this charge’s own percent.</p>
+<p>An extra charge that is switched off is left off the next bill. Charges start active.</p>
+<hr>
+<h2 id="flats">Flats</h2>
+<p>A flat is one unit. It must point at a tower and a unit type. Those two links are how Jameen knows where the flat is and what to charge.</p>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>Required</th><th>What to enter</th></tr>
+<tr><td>Flat number</td><td>Yes</td><td>The door number, unique inside that tower. “101”, “A-1204”, “G-02”.</td></tr>
+<tr><td>Tower</td><td>Yes</td><td>The tower this flat is in.</td></tr>
+<tr><td>Unit type</td><td>Yes</td><td>The type whose area and rate will be billed.</td></tr>
+<tr><td>Year built</td><td>Yes</td><td>The year of this flat. Jameen requires it even when it matches the society’s year.</td></tr>
+<tr><td>Bedrooms</td><td>No</td><td>A count, for the office record.</td></tr>
+<tr><td>Bathrooms</td><td>No</td><td>A count, for the office record.</td></tr>
+<tr><td>Electricity account</td><td>No</td><td>The electricity board account number for this flat.</td></tr>
+<tr><td>Water account</td><td>No</td><td>The water account number for this flat.</td></tr>
+<tr><td>Internal extension</td><td>No</td><td>An intercom or extension number.</td></tr>
+</table></div>
+<p>A new flat starts <strong>unallotted</strong>. It has no owner on it, and the scheduled maintenance run does not bill it.</p>
+<p>The flat then moves through three states:</p>
+<div class="kb-table-wrap"><table>
+<tr><th>State</th><th>What it means</th></tr>
+<tr><td>Unallotted</td><td>No current allotment. Not on the scheduled bill run.</td></tr>
+<tr><td>Vacant</td><td>Allotted, and nobody has moved in.</td></tr>
+<tr><td>Occupied</td><td>Allotted, and a moving-in stay is current.</td></tr>
+</table></div>
+<p>The scheduled bill follows the allotment, not the moving-in stay. Create the allotment when the flat should start receiving maintenance bills. The date the allotment started does not reduce the first bill to a part-month. The first billing day charges the full frequency. That rule is in the recurring-bills guide.</p>
+<p>Closing an allotment does not, by itself, stop the next scheduled bill. Plan that before you end an allotment.</p>
+<hr>
+<h2 id="parking">Parking</h2>
+<p>A parking record is a bay number on the property. Creating it does not attach it to a flat. Attaching it is a later step, and it needs a flat that already has a current allotment.</p>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>Required</th><th>What to enter</th></tr>
+<tr><td>Parking number</td><td>Yes</td><td>The bay number, unique across the whole property. “B1-014”, “OPEN-22”. Two towers cannot use the same bay number.</td></tr>
+</table></div>
+<p>A bay is either allotted or free.</p>
+<ul>
+<li><strong>Free</strong> means no current link to an allotment.</li>
+<li><strong>Allotted</strong> means it is linked to a current allotment. The flat on that allotment is the flat the bay belongs to.</li>
+</ul>
+<p>A vehicle can then be placed on an allotted bay. The bay number itself stays the same. Ending the link returns the bay to free. The bay record remains, so the number can be allotted again.</p>
+<p>A fixed parking charge on the unit type is a rupee line on the maintenance bill. It is not this bay list. The bay list is which physical bay belongs to which flat. The charge is what the bill asks for. Set both if the society does both.</p>
+<hr>
+<h2 id="security-posts">Security posts</h2>
+<p>A security post is a place a guard can be on duty: a gate, a tower lobby, the clubhouse, a parking entrance, or another point. Shifts are opened against a post. A guard’s open shift is what lets the gate record visitors.</p>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>Required</th><th>What to enter</th></tr>
+<tr><td>Name</td><td>Yes</td><td>The name the guard sees: “Main Gate”, “Tower A”, “Clubhouse”.</td></tr>
+<tr><td>Kind</td><td>Yes</td><td>Tower, gate, clubhouse, parking, or other.</td></tr>
+<tr><td>Tower</td><td>Only for a tower post</td><td>The tower this lobby belongs to. A gate, clubhouse, parking, or other post has no tower.</td></tr>
+<tr><td>Active</td><td>No</td><td>A new post is active. An inactive post remains on the list and is not a place to open a new shift.</td></tr>
+<tr><td>Position</td><td>No</td><td>A whole number used to sort the list. Lower numbers come first, then the name. A new post starts at 0.</td></tr>
+</table></div>
+<p><strong>Tower posts are created for you.</strong> Adding a tower adds one tower post with that tower’s name, and only one tower post can point at a given tower. Rename the tower to rename the post. Add a tower post by hand only when you are tying a post to a tower that does not already have one.</p>
+<p>Add the other posts yourself. A typical site needs at least one gate post, because that is where visitors are received. Clubhouse, parking, and other are extra posts if those points have their own guard.</p>
+<p>A post that already has a shift cannot be removed until that history is dealt with. Plan the post list before guards start opening shifts.</p>
+<hr>
+<h2 id="common-assets">Common assets</h2>
+<p>Assets are the plant and common equipment the helpdesk can attach a complaint to: a lift, a generator, a pump, CCTV, the fire system. They are not flats, and they are not billed to residents from this screen.</p>
+<div class="kb-table-wrap"><table>
+<tr><th>Field</th><th>Required</th><th>What to enter</th></tr>
+<tr><td>Name</td><td>Yes</td><td>The asset’s name: “Lift 2, Tower A”, “DG set”.</td></tr>
+<tr><td>Description</td><td>No</td><td>What it is, or a serial number, in words.</td></tr>
+<tr><td>Type</td><td>No</td><td>Common area, equipment, lift, generator, pump, gate, CCTV, water tank, fire system, or other.</td></tr>
+<tr><td>Location</td><td>No</td><td>Where it stands.</td></tr>
+<tr><td>Installed on</td><td>No</td><td>The installation date.</td></tr>
+<tr><td>Warranty ends</td><td>No</td><td>The warranty end date.</td></tr>
+<tr><td>AMC vendor</td><td>No</td><td>The contractor who holds the annual maintenance contract, if that vendor is already on the society.</td></tr>
+<tr><td>AMC ends</td><td>No</td><td>The date that contract ends. Jameen can remind the office when an AMC is inside 30 days of this date.</td></tr>
+</table></div>
+<p>A new asset starts active. It can later be inactive, or under maintenance.</p>
+<p>Documents can be attached to the asset: a warranty card, an AMC copy, a manual. Each document has a name, a description, and a file.</p>
+<hr>
+<h2 id="a-short-example">A short example</h2>
+<p>Horizon Residency, a residential society in Pune.</p>
+<div class="kb-table-wrap"><table>
+<tr><th>Step</th><th>What the office enters</th></tr>
+<tr><td>Property</td><td>Name Horizon Residency. Address and city filled. Use residential. Quarterly, start month April, in arrears, generation day 5, 14 days to pay, no late fee yet. Invoice prefix <code>HR-%FINANCIAL_YEAR%-</code>, last number 0. Bank, IFSC, and GSTIN filled. Outgoing email left on.</td></tr>
+<tr><td>Towers</td><td>Tower A and Tower B. Each save creates a tower security post of the same name.</td></tr>
+<tr><td>Unit types</td><td>2 BHK, residential, 980 square feet, ₹4 per square foot. 3 BHK, residential, 1,450 square feet, ₹4 per square foot.</td></tr>
+<tr><td>Extra charge</td><td>On 2 BHK, a fixed charge named Parking, ₹500 a month, GST 0.</td></tr>
+<tr><td>Flats</td><td>A-101 on Tower A, type 2 BHK, year 2014. B-201 on Tower B, type 3 BHK, year 2014. Both start unallotted.</td></tr>
+<tr><td>Parking</td><td>Bays B1-014 and B1-015. Both start free.</td></tr>
+<tr><td>Posts</td><td>A post named Main Gate, kind gate. The two tower posts already exist.</td></tr>
+<tr><td>Asset</td><td>Lift 1, Tower A, type lift, AMC end date filled.</td></tr>
+</table></div>
+<p>A-101 is still unallotted, so 5 April raises nothing for it. After the office allots A-101, the next quarterly billing morning raises one bill: maintenance ₹4 × 980 × 3 months, plus parking ₹500 × 3, dated the 5th, due 14 days later. The bill number starts <code>HR-2026-27-1</code> if that morning falls in financial year 2026-27.</p>
+<hr>
+<h2 id="what-the-office-should-remember">What the office should remember</h2>
+<ul>
+<li>Name, address, and city are the only fields a property cannot be saved without. Billing can be corrected later, and it applies to bills not yet raised.</li>
+<li>The billing frequency, start month, arrears or advance, generation day, days to pay, and late-fee rule are society-wide. The rate and the area are on the unit type.</li>
+<li>Add towers and unit types before flats. A flat number is unique inside its tower.</li>
+<li>Saving a tower creates its tower security post. Add the gate post yourself.</li>
+<li>A parking bay is only a number until it is linked to a current allotment. A parking charge on the unit type is a separate line on the bill.</li>
+<li>A flat is billed on the scheduled run after it has an allotment. The first bill is the full period, not a part-month.</li>
+<li>Outgoing email controls the bill PDF. The automatic-invoice and reminder switches are stored, and the morning bill run does not read them.</li>
+</ul>
+        <div class="kb-next">
+          <a href="knowledge-base.html">
+            <div class="label">All guides</div>
+            <div class="title">Back to Knowledge Base</div>
+          </a>
+          <a href="kb-recurring-invoices.html">
+            <div class="label">Related guide</div>
+            <div class="title">How Jameen raises recurring maintenance bills →</div>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html" style="color:#fff;"><img class="mark" src="images/icon-192.png" alt="" width="28" height="28">Jameen</a>
+        <p>India's AI-powered Smart Community Operating System — built for housing societies and the companies that manage them.</p>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <ul>
+          <li><a href="features.html#payments">Online Payments</a></li>
+          <li><a href="features.html#visitors">Visitor Management</a></li>
+          <li><a href="features.html#helpdesk">Helpdesk</a></li>
+          <li><a href="knowledge-base.html">Knowledge Base</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Guides</h5>
+        <ul>
+          <li><a href="kb-property-onboarding.html">Property onboarding</a></li>
+          <li><a href="kb-helpdesk.html">Helpdesk</a></li>
+          <li><a href="kb-community-updates.html">Community updates</a></li>
+          <li><a href="kb-recurring-invoices.html">Recurring invoices</a></li>
+          <li><a href="kb-invoice-types.html">Invoice types</a></li>
+          <li><a href="kb-rwa-accounting.html">RWA accounting</a></li>
+          <li><a href="kb-accounting-reports.html">Accounting reports</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="index.html#demo">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Jameen. All rights reserved.</span>
+      <span>Made for Indian housing societies.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  function setNavOpen(open) {
+    navLinks.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open);
+    navToggle.textContent = open ? 'CLOSE' : 'MENU';
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  navToggle.addEventListener('click', () => {
+    setNavOpen(!navLinks.classList.contains('open'));
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setNavOpen(false)));
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900 && navLinks.classList.contains('open')) setNavOpen(false);
+  });
+</script>
+
+</body>
+</html>

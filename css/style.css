@@ -1018,7 +1018,7 @@ form.demo .btn{ width:100%; justify-content:center; margin-top:6px; }
 .kb-hero h1{ font-size:clamp(30px,4vw,44px); margin:14px 0 12px; }
 .kb-hero .lede{ color:var(--stone-dark); font-size:16.5px; max-width:62ch; margin:0; }
 .kb-grid{
-  display:grid; grid-template-columns:repeat(2,1fr); gap:20px;
+  display:grid; grid-template-columns:repeat(3,1fr); gap:20px;
   padding:10px 0 80px;
 }
 .kb-card{
@@ -1123,9 +1123,12 @@ form.demo .btn{ width:100%; justify-content:center; margin-top:6px; }
 .kb-next .title{ font-family:var(--serif); font-size:17px; font-weight:500; }
 
 @media(max-width:900px){
-  .kb-grid{ grid-template-columns:1fr; }
+  .kb-grid{ grid-template-columns:1fr 1fr; }
   .kb-layout{ grid-template-columns:1fr; gap:28px; }
   .kb-toc{ position:static; }
+}
+@media(max-width:640px){
+  .kb-grid{ grid-template-columns:1fr; }
 }
 @media(max-width:600px){
   .kb-hero, .kb-article-hero{ padding:48px 0 20px; }
