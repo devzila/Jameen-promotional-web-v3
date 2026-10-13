@@ -95,10 +95,19 @@ header.site{
 }
 .brand .mark{
   width:28px; height:28px;
-  border-radius:4px;
   display:block;
-  object-fit:cover;
+  object-fit:contain;
   flex-shrink:0;
+}
+.brand .wordmark{
+  height:17px; width:auto;
+  display:block;
+  flex-shrink:0;
+}
+.foot-brand .brand .wordmark{ filter:brightness(0) invert(1); }
+.foot-brand .brand .mark{
+  width:32px; height:32px; padding:3px;
+  background:var(--paper); border-radius:6px;
 }
 nav.links{display:flex; gap:30px; align-items:center;}
 nav.links a{
