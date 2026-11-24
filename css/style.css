@@ -73,8 +73,10 @@ h1,h2,h3,h4{font-family:var(--serif); font-weight:500; letter-spacing:-0.01em; l
 :focus-visible{ outline: 2px solid var(--clay); outline-offset: 3px; }
 
 /* ---------- reveal ---------- */
-.reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
-.reveal.in{opacity:1; transform:none;}
+/* Hidden only when JavaScript is running (html.js is set in <head>), so the
+   content stays visible to crawlers and readers without JavaScript. */
+.js .reveal{opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease;}
+.js .reveal.in{opacity:1; transform:none;}
 
 /* ---------- nav ---------- */
 header.site{

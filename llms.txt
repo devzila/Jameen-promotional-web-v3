@@ -1,0 +1,41 @@
+# Jameen
+
+> Jameen is India's AI-powered Smart Community Operating System: housing society management software that covers maintenance billing, a resident app, visitor management, helpdesk and complaints, community updates and double-entry accounting. It is built for Indian housing societies (RWAs, apartment owners' associations, co-operative housing societies) and for the companies that manage them.
+
+Key facts:
+
+- Website: https://jameen.com
+- Who it is for: managing committees, treasurers, society accountants, office staff, residents, security staff and technicians, and property or facility management companies that run more than one society.
+- Live today: maintenance billing, the resident app, visitor management, complaints (helpdesk) and accounting.
+- Being built on top: an AI assistant, predictive analytics and IoT-connected infrastructure. The AI Intelligence page separates what is live from what is on the roadmap.
+- Platforms: web, plus the Jameen Resident mobile app on iOS and Android.
+- Pricing, per month in Indian rupees: Free Community (up to 20 units) ₹0; Small Community (up to 50 units) ₹99; Growing Community (up to 100 units) ₹399; Large Community (up to 300 units) ₹749; Enterprise Community (301+ units) ₹1,999. Annual billing includes roughly two months free. There are no setup fees.
+- Contact: support@jameen.com. A demo can be booked at https://jameen.com/#demo
+- All pages are static HTML and can be read without running JavaScript. A full list is in https://jameen.com/sitemap.xml
+
+## Product
+
+- [Home](https://jameen.com/): Overview of Jameen, what is live today, the AI and IoT layer being built, and the demo request form.
+- [Features](https://jameen.com/features.html): Helpdesk and complaints, visitor management, online maintenance payments, community announcements, and reports for the committee and the auditor.
+- [AI Intelligence](https://jameen.com/ai-intelligence.html): The AI society assistant, AI financial intelligence, IoT-connected smart maintenance, predictive analytics, and the product roadmap.
+- [For Companies](https://jameen.com/for-companies.html): How property and facility management companies manage multiple societies, staff, finances, access and reports from one company workspace.
+- [Trust & Security](https://jameen.com/security.html): Encryption in transit and at rest, role-based access, audit logs, backups, tenant isolation and availability.
+- [Pricing](https://jameen.com/pricing.html): The five plans by number of units, what each includes, monthly and annual billing, and answers to common committee questions.
+
+## Knowledge Base
+
+Plain-language operating guides for committees, treasurers, accountants and office staff.
+
+- [Knowledge Base](https://jameen.com/knowledge-base.html): Index of all guides.
+- [How to onboard a property on Jameen](https://jameen.com/kb-property-onboarding.html): Property fields, towers, unit types, flats, parking, security posts and common assets, and the order to set a site up before billing starts.
+- [How the helpdesk works](https://jameen.com/kb-helpdesk.html): How a maintenance request is logged, assigned, timed and closed, for flats, common assets, technicians and vendors.
+- [How community updates work](https://jameen.com/kb-community-updates.html): Notices, alerts, events and polls: drafts, who can see them, pinning, publishing and what residents see in the feed.
+- [How Jameen raises recurring maintenance bills](https://jameen.com/kb-recurring-invoices.html): When a bill is raised, which months are billing months, what period it covers, due dates, overdue rules and how late fees are added.
+- [The three kinds of member bills](https://jameen.com/kb-invoice-types.html): Scheduled maintenance bills, one-off custom bills and formula-based template bills, when to use each, and how collection works afterwards.
+- [How Jameen keeps the society's accounts](https://jameen.com/kb-rwa-accounting.html): Double-entry books for bills, GST, payments, waivers, overpayments, expenses, year close and the audit trail.
+- [How to read the accounting reports](https://jameen.com/kb-accounting-reports.html): Trial balance, income and expenditure, balance sheet, ledgers, cash and bank books, receivables aging, payables and the health check.
+
+## Optional
+
+- [Privacy Policy](https://jameen.com/privacy-policy.html): What the Jameen Resident mobile app collects, how it is used, and the choices users have.
+- [Terms & Conditions](https://jameen.com/terms.html): The terms that govern use of the Jameen platform, website and Resident mobile app.

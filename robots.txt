@@ -1,0 +1,36 @@
+# robots.txt for https://jameen.com
+# Every crawler, search engine and AI system may read every page of this site.
+
+User-agent: *
+Allow: /
+
+# AI search, assistant and training crawlers, named explicitly so their access
+# does not depend on the catch-all group above.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: GoogleOther
+User-agent: Google-CloudVertexBot
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+User-agent: meta-externalagent
+User-agent: meta-externalfetcher
+User-agent: FacebookBot
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: cohere-ai
+User-agent: MistralAI-User
+User-agent: DuckAssistBot
+User-agent: YouBot
+User-agent: Diffbot
+Allow: /
+
+Sitemap: https://jameen.com/sitemap.xml
